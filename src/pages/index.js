@@ -1,5 +1,6 @@
 import * as React from "react"
-import {Header} from "../components/Header";
+import Header from "../components/Header";
+import Logo from "../images/svg/logo.svg"
 
 // styles
 const pageStyles = {
@@ -131,6 +132,8 @@ const IndexPage = () => {
     return (
         <>
             <Header/>
+            {/* To test that the SVG asset work alone: */}
+            <Logo /> 
             <main style={pageStyles}>
                 <title>Home Page</title>
                 <h1 style={headingStyles}>
