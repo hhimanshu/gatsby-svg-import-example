@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 import "./layout.css"
 import { ChakraProvider } from "@chakra-ui/react"
-import Header from "./header"
+import {Header} from "./header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

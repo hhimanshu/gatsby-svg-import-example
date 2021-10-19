@@ -5,13 +5,6 @@ module.exports = {
     title: "gatsby-svg",
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /svg/
-        }
-      }
-    }
+    'gatsby-plugin-svgr',
   ],
 };
