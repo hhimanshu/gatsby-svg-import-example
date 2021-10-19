@@ -1,12 +1,10 @@
 import React from "react"
-import {Box, Icon, Text} from "@chakra-ui/react"
-import logoUrl, {ReactComponent as Logo} from "../../images/svg/logo.svg"
+import {Flex, Text} from "@chakra-ui/react"
+import {ReactComponent as Logo} from "../../images/svg/logo.svg"
 
 export const Header = () => {
-    return <Box h={56} border={'1px solid black'}>
-        {/*<Text fontSize={"7xl"}><Icon as={Logo}/>TheBigLogo</Text>*/}
+    return <Flex py={2} pl={2} border={'1px solid black'} gridGap={2} alignItems={"center"}>
         <Logo/>
-    </Box>
+        <Text fontSize={'xl'} fontWeight={"black"}>TheBigLogo</Text>
+    </Flex>
 }
-
-//export default Header
